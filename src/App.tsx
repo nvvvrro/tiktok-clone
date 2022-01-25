@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { VideoPlayer } from "./components/VideoPlayer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -7,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <main>
-        Tik Tok 
+        Tik Tok
+        <VideoPlayer />
       </main>
     </div>
   );
