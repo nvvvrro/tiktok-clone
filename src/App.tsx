@@ -1,15 +1,12 @@
-import { useState } from "react";
 import "./App.css";
-import { VideoPlayer } from "./components/VideoPlayer";
+import { FeedVideos } from "./components/FeedVideos";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <main>
         Tik Tok
-        <VideoPlayer />
+        <FeedVideos />
       </main>
     </div>
   );
