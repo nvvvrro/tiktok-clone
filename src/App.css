@@ -1,9 +1,9 @@
 .App {
   background: #000;
-  height: 100vh;
   display: grid;
-  place-content: center;
+  height: 100vh;
   overflow: hidden;
+  place-content: center;
 }
 
 main {
