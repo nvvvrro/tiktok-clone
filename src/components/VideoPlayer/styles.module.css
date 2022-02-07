@@ -27,15 +27,57 @@
 
 .actions {
   position: absolute;
-  bottom: 16px;
+  bottom: 122px;
   right: 16px;
+  z-index: 1;
 }
 
 .action {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.album {
+  animation: rotate 4s infinite linear;
+  background: url("../../../assets/icons/album.svg");
+  width: 48px;
+  height: 48px;
+  display: flex;
   align-items: center;
-  scroll-snap-type: y mandatory;
+  justify-content: center;
+}
+
+.albumImage {
+  whidth: 32px;
+  height: 32px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-item: flex-end;
+  padding: 20px;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
